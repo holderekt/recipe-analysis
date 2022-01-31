@@ -1,3 +1,3 @@
 # recipe-analysis
 Progetto "Gestione dati strutturati e non strutturati"
-ahafidofhadfohahofo
+Progetto per conto di B. e L.
