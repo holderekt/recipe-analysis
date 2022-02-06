@@ -1,9 +1,9 @@
 
-USE recipe_analysis;
 DROP TABLE IF EXISTS composed;
 CREATE TABLE composed(
-id INT NOT NULL AUTO_INCREMENT,
-PRIMARY KEY (id),
+id SERIAL PRIMARY KEY,
+recipeID INT NOT NULL,
+stepID INT NOT NULL,
 FOREIGN KEY (recipeID) REFERENCES recipes(id),
 FOREIGN KEY (stepID) REFERENCES steps(id)
 );

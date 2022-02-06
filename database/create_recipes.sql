@@ -1,11 +1,10 @@
 
-USE recipe_analysis;
 DROP TABLE IF EXISTS recipes;
 CREATE TABLE recipes(
-id INT PRIMARY KEY,
-titolo VARCHAR(100) NOT NULL,
-preparazione_nstr VARCHAR(500),
-ingredienti_nstr VARCHAR(500)
+id SERIAL PRIMARY KEY,
+titolo VARCHAR NOT NULL,
+preparazione_nstr VARCHAR,
+ingredienti_nstr VARCHAR
 );
 INSERT INTO recipes (id, titolo, ingredienti_nstr, preparazione_nstr) VALUES (0,'Jewell Ball''S Chicken','1 small jar chipped beef, cut up. 4 boned chicken breasts. 1 can cream of mushroom soup. 1 carton sour cream','Place chipped beef on bottom of baking dish. Place chicken on top of beef. Mix soup and cream together; pour over chicken. Bake, uncovered, at 275° for 3 hours.');
 INSERT INTO recipes (id, titolo, ingredienti_nstr, preparazione_nstr) VALUES (1,'Creamy Corn','16 ounce package frozen corn. 8 ounce package cream cheese, cubed. 1/3 cup butter, cubed. 1/2 teaspoon garlic powder. 1/2 teaspoon salt. 1/4 teaspoon pepper','In a slow cooker, combine all ingredients. Cover and cook on low for 4 hours or until heated through and cheese is melted. Stir well before serving. Yields 6 servings.');

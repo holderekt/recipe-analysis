@@ -1,9 +1,9 @@
 
-USE recipe_analysis;
 DROP TABLE IF EXISTS involves;
 CREATE TABLE involves(
-id INT NOT NULL AUTO_INCREMENT,
-PRIMARY KEY (id),
+id SERIAL PRIMARY KEY,
+ingredientID INT NOT NULL,
+stepID INT NOT NULL,
 FOREIGN KEY (ingredientID) REFERENCES ingredients(id),
 FOREIGN KEY (stepID) REFERENCES steps(id)
 );
