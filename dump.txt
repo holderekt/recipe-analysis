@@ -17,7 +17,7 @@ Place chipped beef on bottom of baking dish. Place chicken on top of beef. Mix s
 +--+---------------+--------------------+-------------------------------------------------------|
 |1 |place          |bottom,baking dish  |beef                                                   |
 |2 |place          |                    |beef,chicken breasts                                   |
-|3 |mix            |                    |sour cream,mushroom soup cream                         |
+|3 |mix            |                    |mushroom soup cream,sour cream                         |
 |4 |pour           |                    |chicken breasts                                        |
 |5 |bake           |                    |                                                       |
 +--+---------------+--------------------+-------------------------------------------------------|
@@ -65,7 +65,7 @@ Boil and debone chicken. Put bite size pieces in average size square casserole d
 +--+---------------+--------------------+-------------------------------------------------------|
 |1 |debone         |                    |chicken gravy cans,chicken                             |
 |2 |put            |casserole dish      |                                                       |
-|3 |pour           |                    |chicken gravy cans,mushroom soup cream,chicken         |
+|3 |pour           |                    |chicken gravy cans,chicken,mushroom soup cream         |
 |4 |level          |                    |                                                       |
 |5 |make           |box                 |stuffing                                               |
 |6 |put            |                    |chicken gravy cans,chicken,stuffing                    |
@@ -134,7 +134,7 @@ Wash potatoes; prick several times with a fork. Microwave them with a wet paper 
 |14|cook           |                    |                                                       |
 |15|add            |                    |milk                                                   |
 |16|cook           |                    |                                                       |
-|17|stir           |ground              |bacon,pepper,salt,cheddar cheese,green onion,beef pound|
+|17|stir           |ground              |green onion,salt,cheddar cheese,beef pound,pepper,bacon|
 |18|boil           |                    |                                                       |
 |19|stir           |                    |                                                       |
 |20|cook           |                    |                                                       |
@@ -163,11 +163,11 @@ Cream sugar and butter. Add egg and beat well. To creamed butter, sugar and egg,
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |cream          |                    |sugar,butter                                           |
+|1 |cream          |                    |butter,sugar                                           |
 |2 |add            |                    |egg                                                    |
-|3 |add            |mixture             |flour,soda,salt,sugar,butter,egg,buttermilk            |
+|3 |add            |mixture             |buttermilk,flour,salt,egg,butter,soda,sugar            |
 |4 |mix            |                    |                                                       |
-|5 |add            |                    |vanilla,rhubarb                                        |
+|5 |add            |                    |rhubarb,vanilla                                        |
 |6 |pour           |inch pan            |                                                       |
 +--+---------------+--------------------+-------------------------------------------------------|
 Scalloped Corn
@@ -188,7 +188,7 @@ Mix together both cans of corn, crackers, egg, 2 teaspoons of melted butter and 
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |mix            |baking dish         |cream corn,saltine crackers,corn,butter,egg            |
+|1 |mix            |baking dish         |cream corn,egg,saltine crackers,corn,butter            |
 |2 |dot            |teaspoons           |butter                                                 |
 |3 |bake           |                    |                                                       |
 +--+---------------+--------------------+-------------------------------------------------------|
@@ -214,10 +214,10 @@ Roll steak strips in flour. Brown in skillet. Salt and pepper. Combine tomato li
 |1 |roll           |                    |                                                       |
 |2 |brown          |skillet             |                                                       |
 |3 |salt           |                    |green peppers                                          |
-|4 |combine        |                    |cut tomatoes,onions,water                              |
+|4 |combine        |                    |water,onions,cut tomatoes                              |
 |5 |simmer         |                    |                                                       |
 |6 |uncover        |                    |worcestershire sauce                                   |
-|7 |add            |                    |cut tomatoes,green peppers                             |
+|7 |add            |                    |green peppers,cut tomatoes                             |
 |8 |serve          |                    |                                                       |
 +--+---------------+--------------------+-------------------------------------------------------|
 Millionaire Pie
@@ -243,7 +243,7 @@ Empty Cool Whip into a bowl. Drain juice from pineapple. Mix Cool Whip and pinea
 |2 |drain          |                    |pineapple                                              |
 |3 |mix            |                    |pineapple,whip                                         |
 |4 |add            |                    |milk                                                   |
-|5 |remove         |                    |lemons,pineapple,whip                                  |
+|5 |remove         |                    |pineapple,lemons,whip                                  |
 |6 |chop           |                    |                                                       |
 |7 |stir           |                    |                                                       |
 |8 |pour           |crust               |graham                                                 |
@@ -273,10 +273,10 @@ Drain cherries, measuring syrup. Cut cherries in half. Add ginger ale and enough
 |1 |drain          |                    |sweet cherries                                         |
 |2 |cut            |half                |sweet cherries                                         |
 |3 |add            |                    |ginger ale,water                                       |
-|4 |dissolve       |                    |cherry gelatin,water                                   |
+|4 |dissolve       |                    |water,cherry gelatin                                   |
 |5 |add            |                    |almond extract                                         |
 |6 |chill          |                    |                                                       |
-|7 |fold in        |                    |sweet cherries,marshmallows                            |
+|7 |fold in        |                    |marshmallows,sweet cherries                            |
 |8 |spoon          |mold                |                                                       |
 |9 |chill          |                    |                                                       |
 |10|unmold         |                    |                                                       |
@@ -300,11 +300,11 @@ Mix sugar, butter and peanut butter. Roll into balls and place on cookie sheet. 
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |mix            |                    |sugar,butter,peanut butter                             |
+|1 |mix            |                    |butter,sugar,peanut butter                             |
 |2 |roll           |balls,cookie sheet  |                                                       |
 |3 |set            |freezer             |                                                       |
-|4 |melt           |boiler              |chocolate chips,paraffin                               |
-|5 |paraffin       |way,chip            |chocolate chips,paraffin                               |
+|4 |melt           |boiler              |paraffin,chocolate chips                               |
+|5 |paraffin       |way,chip            |paraffin,chocolate chips                               |
 +--+---------------+--------------------+-------------------------------------------------------|
 Quick Barbecue Wings
 
@@ -351,11 +351,11 @@ Mix taco sauce, sour cream and cream cheese. Spread on pizza pan. Brown meat. Dr
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |mix            |                    |taco seasoning,taco sauce,sour cream,cream cheese      |
+|1 |mix            |                    |taco sauce,sour cream,cream cheese,taco seasoning      |
 |2 |spread         |                    |                                                       |
 |3 |brown          |                    |                                                       |
-|4 |drain off      |                    |taco seasoning,taco sauce                              |
-|5 |spread         |                    |sour cream,cream cheese                                |
+|4 |drain off      |                    |taco sauce,taco seasoning                              |
+|5 |spread         |                    |cream cheese,sour cream                                |
 |6 |layer          |                    |                                                       |
 |7 |top            |                    |cream cheese                                           |
 |8 |serve          |                    |                                                       |
@@ -403,7 +403,7 @@ Mix water, cornstarch, sugar and salt in saucepan. Stir constantly and boil unti
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |mix            |saucepan            |sugar,cornstarch,salt,water                            |
+|1 |mix            |saucepan            |cornstarch,salt,water,sugar                            |
 |2 |stir           |                    |                                                       |
 |3 |remove         |                    |strawberry jello                                       |
 |4 |set            |                    |                                                       |
@@ -430,7 +430,7 @@ Mix according to directions and add oil. Bake in 9 x 13-inch pan.
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |mix            |                    |chocolate fudge cake pudding mix,oil,white cake pudding mix|
+|1 |mix            |                    |oil,white cake pudding mix,chocolate fudge cake pudding mix|
 |2 |bake           |inch pan            |                                                       |
 +--+---------------+--------------------+-------------------------------------------------------|
 Broccoli Salad
@@ -457,7 +457,7 @@ Trim off large leaves of broccoli and remove the tough ends of lower stalks. Was
 |2 |wash           |                    |                                                       |
 |3 |cut            |bite size           |                                                       |
 |4 |place          |bowl                |                                                       |
-|5 |add            |                    |raisins,bacon                                          |
+|5 |add            |                    |bacon,raisins                                          |
 |6 |combine        |                    |                                                       |
 |7 |add            |                    |                                                       |
 |8 |cover          |                    |                                                       |
@@ -484,7 +484,7 @@ Mix Jell-O in boiling water. Add strawberries, pineapple, crushed bananas and nu
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
 |1 |mix            |                    |water                                                  |
-|2 |add            |                    |juice strawberries,bananas,pineapple                   |
+|2 |add            |                    |pineapple,juice strawberries,bananas                   |
 |3 |spread         |inch pan            |                                                       |
 |4 |allow          |freezer             |                                                       |
 |5 |add            |                    |sour cream                                             |
@@ -510,7 +510,7 @@ Mix Crisco with applesauce, nuts and raisins. Sift dry ingredients and add. Mix 
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |mix            |                    |applesauce,raisins                                     |
+|1 |mix            |                    |raisins,applesauce                                     |
 |2 |sift           |                    |                                                       |
 |3 |mix            |                    |                                                       |
 |4 |put in         |                    |                                                       |
@@ -536,7 +536,7 @@ Cream sugar and shortening. Add eggs, salt and soda, then bananas and flour. Add
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
 |1 |cream          |                    |sugar                                                  |
-|2 |add            |                    |soda,salt,flour                                        |
+|2 |add            |                    |soda,flour,salt                                        |
 |3 |add            |                    |nuts                                                   |
 |4 |mix            |                    |                                                       |
 |5 |bake           |loaf pan            |                                                       |
@@ -561,10 +561,10 @@ Mix ingredients together for 5 minutes. Scrape bowl often. Last fold in chocolat
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |mix            |                    |chocolate fudge pudding mixinstant,food cake mix       |
+|1 |mix            |                    |food cake mix,chocolate fudge pudding mixinstant       |
 |2 |scrape         |                    |                                                       |
 |3 |fold in        |                    |chocolate fudge pudding mixinstant,mints               |
-|4 |bake           |                    |chocolate fudge pudding mixinstant,food cake mix       |
+|4 |bake           |                    |food cake mix,chocolate fudge pudding mixinstant       |
 +--+---------------+--------------------+-------------------------------------------------------|
 Cuddy Farms Marinated Turkey
 
@@ -698,8 +698,8 @@ Brown strips in cooking oil. Pour off drippings. Combine tomato sauce, water, br
 +--+---------------+--------------------+-------------------------------------------------------|
 |1 |brown          |                    |oil                                                    |
 |2 |pour off       |                    |                                                       |
-|3 |combine        |                    |mustard,tomato sauce,sugar,worcestershire sauce,water  |
-|4 |add            |                    |worcestershire sauce,tomato sauce,onion                |
+|3 |combine        |                    |mustard,water,sugar,tomato sauce,worcestershire sauce  |
+|4 |add            |                    |tomato sauce,onion,worcestershire sauce                |
 |5 |cover          |                    |                                                       |
 |6 |serve          |                    |                                                       |
 |7 |yields         |                    |tomato sauce                                           |
@@ -722,7 +722,7 @@ Butter a square pan, 8 x 8 x 2-inches. Heat milk, chocolate chips and unsweetene
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
 |1 |butter         |                    |                                                       |
-|2 |heat           |                    |milk,sweet chocolate chips                             |
+|2 |heat           |                    |sweet chocolate chips,milk                             |
 |3 |remove         |                    |                                                       |
 |4 |stir           |                    |vanilla                                                |
 |5 |spread         |                    |                                                       |
@@ -749,7 +749,7 @@ In a large skillet, brown the ground beef. Drain, stir in taco mix, kidney beans
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
 |1 |brown          |                    |beef                                                   |
-|2 |stir           |                    |taco seasoning,salsa,beans                             |
+|2 |stir           |                    |beans,salsa,taco seasoning                             |
 |3 |boil           |                    |                                                       |
 |4 |reduce         |                    |                                                       |
 |5 |clean          |half                |green peppers                                          |
@@ -778,7 +778,7 @@ Put flour into a large mixing bowl. Combine sugar, milk, salt and oil in a sauce
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
 |1 |put            |mixing bowl         |flour                                                  |
-|2 |combine        |saucepan            |milk,sugar,salt,oil                                    |
+|2 |combine        |saucepan            |oil,sugar,milk,salt                                    |
 |3 |remove         |                    |                                                       |
 |4 |add            |                    |yeast                                                  |
 |5 |pour           |                    |flour                                                  |
@@ -859,8 +859,8 @@ Grease a 9 x 12-inch cake pan. Spread cherry pie mix. Sift cake mix and spread i
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
 |1 |grease         |                    |white cake mix                                         |
-|2 |spread         |                    |white cake mix,pie mix                                 |
-|3 |spread         |                    |white cake mix,pie mix                                 |
+|2 |spread         |                    |pie mix,white cake mix                                 |
+|3 |spread         |                    |pie mix,white cake mix                                 |
 |4 |top            |ground              |nuts                                                   |
 |5 |melt           |                    |stick butter                                           |
 |6 |bake           |oven                |                                                       |
@@ -885,8 +885,8 @@ Beat eggs, salt and pepper until well blended. Stir in half and half, potatoes a
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |beat           |                    |eggs,pepper,salt                                       |
-|2 |stir           |                    |green onions,potatoes                                  |
+|1 |beat           |                    |pepper,eggs,salt                                       |
+|2 |stir           |                    |potatoes,green onions                                  |
 |3 |pour           |baking dish         |                                                       |
 |4 |comes out      |oven,center         |potatoes                                               |
 |5 |cool           |rack                |green onions                                           |
@@ -930,7 +930,7 @@ Drain artichokes and chop. Mix with mayonnaise and Parmesan cheese. After well m
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
 |1 |drain          |                    |                                                       |
-|2 |mix            |                    |mayonnaise,parmesan cheese                             |
+|2 |mix            |                    |parmesan cheese,mayonnaise                             |
 |3 |well           |                    |                                                       |
 |4 |serve          |                    |                                                       |
 +--+---------------+--------------------+-------------------------------------------------------|
@@ -951,7 +951,7 @@ Mix together sour cream, soup mix, broccoli and half of cheese. Sprinkle remaini
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |mix            |                    |cheddar cheese,sour cream,broccoli,vegetable soup mix  |
+|1 |mix            |                    |vegetable soup mix,cheddar cheese,broccoli,sour cream  |
 |2 |sprinkle       |                    |cheddar cheese                                         |
 |3 |bake           |                    |                                                       |
 |4 |serve          |                    |vegetable soup mix                                     |
@@ -1029,7 +1029,7 @@ Trim off green and pink parts of watermelon rind; cut to 1-inch cubes. Parboil u
 |2 |cut            |                    |                                                       |
 |3 |parboil        |                    |                                                       |
 |4 |drain          |                    |                                                       |
-|5 |combine        |                    |cinnamon oil,apple vinegar,sugar,cloves oil            |
+|5 |combine        |                    |apple vinegar,cloves oil,cinnamon oil,sugar            |
 |6 |pour over      |                    |watermelon rind                                        |
 |7 |let            |                    |                                                       |
 |8 |drain off      |                    |                                                       |
@@ -1037,7 +1037,7 @@ Trim off green and pink parts of watermelon rind; cut to 1-inch cubes. Parboil u
 |10|heat           |                    |watermelon rind                                        |
 |11|seal in        |                    |                                                       |
 |12|makes          |                    |                                                       |
-|13|keeps          |                    |cinnamon oil,cloves oil,watermelon rind                |
+|13|keeps          |                    |cloves oil,cinnamon oil,watermelon rind                |
 +--+---------------+--------------------+-------------------------------------------------------|
 Chicken Stew
 
@@ -1068,7 +1068,7 @@ Remove chicken from bone. Use the broth. Mix the vegetables and macaroni. Add su
 |1 |remove         |                    |chicken                                                |
 |2 |use            |                    |                                                       |
 |3 |mix            |                    |macaroni                                               |
-|4 |add            |                    |sugar,pepper,salt                                      |
+|4 |add            |                    |pepper,sugar,salt                                      |
 |5 |cook           |                    |                                                       |
 +--+---------------+--------------------+-------------------------------------------------------|
 Quick Coffee Cake(6 Servings)  
@@ -1097,8 +1097,8 @@ Mix 3 tablespoons fat with granulated sugar. Add egg and beat until creamy. Mix 
 +--+---------------+--------------------+-------------------------------------------------------|
 |1 |mix            |                    |sugar                                                  |
 |2 |add            |                    |egg                                                    |
-|3 |mix            |                    |powder,salt,flour                                      |
-|4 |add            |                    |milk,sugar                                             |
+|3 |mix            |                    |flour,powder,salt                                      |
+|4 |add            |                    |sugar,milk                                             |
 |5 |add            |                    |vanilla                                                |
 |6 |spread         |inch square baking pan|                                                       |
 |7 |sprinkle over  |                    |sugar,cinnamon                                         |
@@ -1126,8 +1126,8 @@ Mix flour, sugar, baking powder, soda and salt together. Cut in margarine, disso
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |mix            |                    |powder,sugar,soda,flour                                |
-|2 |cut            |                    |sticks margarine,water,yeast                           |
+|1 |mix            |                    |powder,flour,sugar,soda                                |
+|2 |cut            |                    |water,yeast,sticks margarine                           |
 |3 |stir           |                    |buttermilk                                             |
 |4 |cover          |                    |                                                       |
 +--+---------------+--------------------+-------------------------------------------------------|
@@ -1240,10 +1240,10 @@ Melt margarine in skillet; saute onions and celery. Remove from heat. Stir in fl
 |1 |melt           |skillet             |margarine                                              |
 |2 |saute          |                    |celery soup cream,celery                               |
 |3 |remove         |                    |                                                       |
-|4 |stir           |                    |curry powder,flour                                     |
+|4 |stir           |                    |flour,curry powder                                     |
 |5 |keep           |                    |juice                                                  |
 |6 |add            |                    |juice                                                  |
-|7 |stir           |mixture             |celery soup cream,flour                                |
+|7 |stir           |mixture             |flour,celery soup cream                                |
 |8 |add            |                    |                                                       |
 |9 |cook           |                    |                                                       |
 |10|arrange        |baking dish         |broccoli,chicken cubed                                 |
@@ -1272,9 +1272,9 @@ Sift flour, baking powder and salt together. Cream together butter and sugar. Ad
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |sift           |                    |powder,salt,flour                                      |
-|2 |cream          |                    |sugar,butter                                           |
-|3 |add            |                    |vanilla,egg yolks                                      |
+|1 |sift           |                    |flour,powder,salt                                      |
+|2 |cream          |                    |butter,sugar                                           |
+|3 |add            |                    |egg yolks,vanilla                                      |
 |4 |beat           |                    |                                                       |
 |5 |mix            |ingredients         |                                                       |
 |6 |shape          |inch balls          |                                                       |
@@ -1308,7 +1308,7 @@ Lightly brown beef in soup pot. Drain off excess fat. Stir in tomatoes, tomato s
 +--+---------------+--------------------+-------------------------------------------------------|
 |1 |brown          |pot                 |beef,soup onion soup cup                               |
 |2 |drain off      |                    |                                                       |
-|3 |stir           |                    |tomato can,soup onion soup cup,tomatoes,sugar,vegetables,water|
+|3 |stir           |                    |tomato can,water,soup onion soup cup,sugar,vegetables,tomatoes|
 |4 |boil           |                    |tomato can                                             |
 |5 |reduce         |                    |                                                       |
 |6 |serve          |                    |                                                       |
@@ -1334,7 +1334,7 @@ Dice chicken. Mix all ingredients together. Let sit overnight. Bake 1 1/2 hours 
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |dice           |                    |chicken breasts,chicken soup cream                     |
+|1 |dice           |                    |chicken soup cream,chicken breasts                     |
 |2 |mix            |                    |                                                       |
 |3 |let            |                    |                                                       |
 |4 |bake           |                    |                                                       |
@@ -1361,7 +1361,7 @@ In a large bowl, combine cabbage, carrot, green pepper and onion or can use pack
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |combine        |package,store       |green pepper,cabbage,onion                             |
+|1 |combine        |package,store       |cabbage,onion,green pepper                             |
 +--+---------------+--------------------+-------------------------------------------------------|
 Creole Flounder
 
@@ -1389,11 +1389,11 @@ Heat oven to 500°. Place fillets in single layer in baking dish, 13 1/2 x 9 x 2
 +--+---------------+--------------------+-------------------------------------------------------|
 |1 |heat           |                    |                                                       |
 |2 |place          |layer,baking dish   |                                                       |
-|3 |stir           |                    |green pepper,pepper,green pepper rings,pepper sauce    |
+|3 |stir           |                    |green pepper rings,green pepper,pepper sauce,pepper    |
 |4 |spoon over     |                    |                                                       |
 |5 |bake           |fork                |                                                       |
 |6 |remove         |                    |                                                       |
-|7 |garnish        |                    |pepper,green pepper,green pepper rings,pepper sauce    |
+|7 |garnish        |                    |green pepper,pepper,pepper sauce,green pepper rings    |
 |8 |makes          |                    |                                                       |
 +--+---------------+--------------------+-------------------------------------------------------|
 Three Bean Salad
@@ -1416,7 +1416,7 @@ Mix together all of sugar, salad oil, vinegar and water until sugar is dissolved
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |mix            |                    |salad oil,vinegar,sugar,water                          |
+|1 |mix            |                    |water,salad oil,vinegar,sugar                          |
 |2 |pour           |                    |beans                                                  |
 +--+---------------+--------------------+-------------------------------------------------------|
 Dave'S Corn Casserole
@@ -1436,7 +1436,7 @@ In a bowl, mix corns, sour cream, corn bread mix and melted margarine. Pour into
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |bowl           |                    |stick margarine,sour cream,corn bread mix,cream corn   |
+|1 |bowl           |                    |stick margarine,corn bread mix,cream corn,sour cream   |
 |2 |pour           |inch pan            |                                                       |
 |3 |bake           |                    |                                                       |
 +--+---------------+--------------------+-------------------------------------------------------|
@@ -1461,7 +1461,7 @@ Brown beef with onion and seasonings and combine in a 1 1/2-quart casserole with
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |combine in     |seasonings          |noodles cup,onion,beef,tomato soup,water               |
+|1 |combine in     |seasonings          |onion,water,noodles cup,tomato soup,beef               |
 |2 |place          |                    |cheese                                                 |
 |3 |bake           |                    |                                                       |
 +--+---------------+--------------------+-------------------------------------------------------|
@@ -1528,10 +1528,10 @@ Mix together cream cheese and mayonnaise. Spread on to a large platter or two di
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |mix            |                    |mozzarella cheese,cheddar cheese,salad mayonnaise,cream|
-|2 |spread on      |                    |mozzarella cheese,green onions,tortilla chips          |
+|1 |mix            |                    |salad mayonnaise,cheddar cheese,cream,mozzarella cheese|
+|2 |spread on      |                    |tortilla chips,green onions,mozzarella cheese          |
 |3 |freeze         |                    |                                                       |
-|4 |spread         |                    |green onions,taco sauce                                |
+|4 |spread         |                    |taco sauce,green onions                                |
 |5 |written        |order               |                                                       |
 |6 |serve          |                    |tortilla chips                                         |
 +--+---------------+--------------------+-------------------------------------------------------|
@@ -1604,10 +1604,10 @@ Mix together cake mix, 2 eggs and melted oleo. Put in greased 9 x 13-inch pan. P
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |mix            |                    |cake mix,eggs                                          |
+|1 |mix            |                    |eggs,cake mix                                          |
 |2 |put in         |                    |                                                       |
 |3 |put            |mixture,mixture     |                                                       |
-|4 |mix            |                    |sugar,cake mix,cream cheese,eggs                       |
+|4 |mix            |                    |eggs,cream cheese,cake mix,sugar                       |
 |5 |add            |mixture,mixture     |                                                       |
 |6 |bake           |                    |                                                       |
 +--+---------------+--------------------+-------------------------------------------------------|
@@ -1627,7 +1627,7 @@ Drain pineapple and reserve juice. Cut bananas in chunks like pineapple.
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
 |1 |drain          |                    |pineapple                                              |
-|2 |cut            |                    |bananas,pineapple                                      |
+|2 |cut            |                    |pineapple,bananas                                      |
 +--+---------------+--------------------+-------------------------------------------------------|
 Chicken Casserole
 
@@ -1671,7 +1671,7 @@ Cream the cream cheese; add the milk and beat smooth. Add lemon juice, pineapple
 +--+---------------+--------------------+-------------------------------------------------------|
 |1 |cream          |                    |cream cheese                                           |
 |2 |add            |                    |milk                                                   |
-|3 |add            |                    |pineapple cup,lemon juice                              |
+|3 |add            |                    |lemon juice,pineapple cup                              |
 |4 |beat           |                    |                                                       |
 |5 |pour           |crust               |                                                       |
 |6 |top            |servings,dollop     |                                                       |
@@ -1778,16 +1778,16 @@ Sift together the flour, soda and salt; set aside. Combine shortening and sugar 
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |sift           |                    |soda,salt,flour                                        |
+|1 |sift           |                    |flour,soda,salt                                        |
 |2 |set            |                    |                                                       |
 |3 |combine        |bowl                |sugar                                                  |
 |4 |beat           |                    |                                                       |
 |5 |add            |                    |                                                       |
 |6 |beat           |                    |                                                       |
-|7 |combine        |                    |vanilla,cocoa,water                                    |
+|7 |combine        |                    |water,cocoa,vanilla                                    |
 |8 |mix            |                    |                                                       |
 |9 |add            |                    |                                                       |
-|10|add            |                    |milk,flour                                             |
+|10|add            |                    |flour,milk                                             |
 |11|beat           |                    |                                                       |
 |12|set            |                    |                                                       |
 |13|beat           |                    |                                                       |
@@ -1852,7 +1852,7 @@ Peel and dice potatoes; place in bowl of cold, salted water. Drain potatoes and 
 |1 |peel           |                    |potatoes                                               |
 |2 |place          |bowl                |                                                       |
 |3 |drain          |paper towels        |potatoes                                               |
-|4 |mix            |                    |sour cream,cheddar cheese,chicken soup cream,butter    |
+|4 |mix            |                    |butter,cheddar cheese,sour cream,chicken soup cream    |
 |5 |stir           |                    |                                                       |
 |6 |add            |casserole dish      |potatoes                                               |
 |7 |mix crush      |                    |butter                                                 |
@@ -1925,7 +1925,7 @@ Mix 1/2 cup of sugar and cinnamon. Spread on apples. Mix 1/4 cup sugar, flour, s
 +--+---------------+--------------------+-------------------------------------------------------|
 |1 |mix            |                    |sugar,cinnamon                                         |
 |2 |spread         |                    |apples                                                 |
-|3 |mix            |                    |corn crumbs,salt dash,flour,stick oleo,sugar           |
+|3 |mix            |                    |flour,stick oleo,salt dash,sugar,corn crumbs           |
 |4 |spread         |                    |apples                                                 |
 +--+---------------+--------------------+-------------------------------------------------------|
 Sausage Balls
@@ -1944,7 +1944,7 @@ Mix sausage and cheese together. Add Bisquick and mix thoroughly. Roll into medi
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |mix            |                    |cheddar cheese,sausage                                 |
+|1 |mix            |                    |sausage,cheddar cheese                                 |
 |2 |add            |                    |bisquick                                               |
 |3 |roll           |size balls          |                                                       |
 |4 |bake           |                    |                                                       |
@@ -1996,8 +1996,8 @@ Brown celery, onions and ground beef in butter. Add vinegar, lemon juice, brown 
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |brown          |                    |beef,celery,onions,butter                              |
-|2 |add            |                    |pepper,mustard,catsup,salt,vinegar,sugar,lemon juice,water|
+|1 |brown          |                    |beef,butter,onions,celery                              |
+|2 |add            |                    |catsup,salt,mustard,vinegar,water,lemon juice,sugar,pepper|
 |3 |simmer         |                    |                                                       |
 +--+---------------+--------------------+-------------------------------------------------------|
 Egg Drop Soup
@@ -2071,8 +2071,8 @@ Combine first 4 ingredients in a small bowl, stir well and set aside. Place chic
 |2 |place          |paper,meat mallet   |chicken breast halves                                  |
 |3 |coat           |                    |vegetable spray                                        |
 |4 |place          |grill               |green onion strips                                     |
-|5 |place          |rack,side,mixture   |chicken breast halves,soy sauce,green onion strips     |
-|6 |transfer       |                    |chicken breast halves,green onion strips               |
+|5 |place          |rack,side,mixture   |green onion strips,soy sauce,chicken breast halves     |
+|6 |transfer       |                    |green onion strips,chicken breast halves               |
 |7 |yields         |                    |                                                       |
 +--+---------------+--------------------+-------------------------------------------------------|
 Egg Casserole
@@ -2122,7 +2122,7 @@ In food processor or blender, grind cranberries, apple and orange. Mix with suga
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |grind          |                    |wedges orange,orange gelatin                           |
+|1 |grind          |                    |orange gelatin,wedges orange                           |
 |2 |mix            |                    |sugar                                                  |
 |3 |prepare        |                    |orange gelatin                                         |
 |4 |begins         |                    |                                                       |
@@ -2174,9 +2174,9 @@ Mix cream cheese, margarine and sugar. Add fruit and walnuts. Whip cream and fol
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |mix            |                    |margarine,sugar,cream cheese,cream cup                 |
+|1 |mix            |                    |cream cup,cream cheese,margarine,sugar                 |
 |2 |add            |                    |walnuts                                                |
-|3 |fold           |mixture             |cream cheese,cream cup                                 |
+|3 |fold           |mixture             |cream cup,cream cheese                                 |
 |4 |pour           |mold                |                                                       |
 |5 |freeze         |                    |                                                       |
 |6 |remove         |                    |                                                       |
@@ -2284,13 +2284,13 @@ Cook squash, onions and carrots until tender. Mash. Melt butter in pan; stir in 
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |cook           |                    |carrots,onions,squash                                  |
+|1 |cook           |                    |carrots,squash,onions                                  |
 |2 |mash           |                    |                                                       |
 |3 |melt           |                    |stick butter                                           |
 |4 |stir           |                    |stuffing mix                                           |
 |5 |drain          |                    |squash                                                 |
-|6 |stir           |                    |sour cream,soup cans                                   |
-|7 |place          |baking dish         |stuffing mix,squash                                    |
+|6 |stir           |                    |soup cans,sour cream                                   |
+|7 |place          |baking dish         |squash,stuffing mix                                    |
 |8 |bake           |                    |                                                       |
 +--+---------------+--------------------+-------------------------------------------------------|
 Cheese Ball
@@ -2315,7 +2315,7 @@ Combine softened cream and Cheddar cheeses. Add chopped up items. Mix and add li
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |combine        |                    |cheddar ounce,cream cheese                             |
+|1 |combine        |                    |cream cheese,cheddar ounce                             |
 |2 |add            |                    |                                                       |
 |3 |mix            |                    |                                                       |
 |4 |mix            |                    |                                                       |
@@ -2343,7 +2343,7 @@ Dissolve jello in boiling water; add sugar. Blend in the cream cheese with a for
 +--+---------------+--------------------+-------------------------------------------------------|
 |1 |dissolve       |                    |water                                                  |
 |2 |add            |                    |sugar                                                  |
-|3 |blend          |fork,fork           |food apricots,cream cheese                             |
+|3 |blend          |fork,fork           |cream cheese,food apricots                             |
 |4 |add            |baby                |food apricots,apricot ounce                            |
 |5 |refrigerate    |                    |                                                       |
 |6 |chill          |                    |milk                                                   |
@@ -2407,7 +2407,7 @@ Use greased 9 x 13-inch pan or Bundt pan. Melt butter; add brown sugar, pudding,
 +--+---------------+--------------------+-------------------------------------------------------|
 |1 |use            |                    |                                                       |
 |2 |melt           |                    |                                                       |
-|3 |add            |                    |milk,sugar                                             |
+|3 |add            |                    |sugar,milk                                             |
 |4 |break up       |balls               |                                                       |
 |5 |place          |                    |                                                       |
 |6 |pour over      |                    |                                                       |
@@ -2434,8 +2434,8 @@ Unroll crescent rolls; add cooked chicken and grated cheese. Wrap roll over chic
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
 |1 |rolls          |                    |rolls                                                  |
-|2 |add            |                    |cheese cup,chicken soup cream                          |
-|3 |roll wrap      |                    |cheese cup,chicken soup cream                          |
+|2 |add            |                    |chicken soup cream,cheese cup                          |
+|3 |roll wrap      |                    |chicken soup cream,cheese cup                          |
 |4 |pinch          |                    |                                                       |
 +--+---------------+--------------------+-------------------------------------------------------|
 Beef And Spanish Rice Casserole
@@ -2456,7 +2456,7 @@ Spray a 1-quart casserole dish with Pam. Layer rice and meat, diced onion and gr
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
 |1 |spray          |                    |                                                       |
-|2 |layer          |                    |cheddar cheese,onion                                   |
+|2 |layer          |                    |onion,cheddar cheese                                   |
 |3 |bake           |                    |                                                       |
 +--+---------------+--------------------+-------------------------------------------------------|
 Baked Beans
@@ -2478,7 +2478,7 @@ Cook onions and bell pepper in oil until onions are transparent. Add beef and co
 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
-|1 |cook           |                    |pepper,oil                                             |
+|1 |cook           |                    |oil,pepper                                             |
 |2 |add            |                    |beef                                                   |
 |3 |mix            |                    |                                                       |
 |4 |bake           |oven,crock pot      |                                                       |
@@ -2511,11 +2511,11 @@ Saute onion in 2 tablespoons shortening. Add carrots, water and bouillon cubes. 
 |N°|AZIONE         |STRUMENTI           |INGREDIENTI                                            |
 +--+---------------+--------------------+-------------------------------------------------------|
 |1 |saute          |tablespoons         |shortening                                             |
-|2 |add            |                    |chicken bouillon cubes,water                           |
+|2 |add            |                    |water,chicken bouillon cubes                           |
 |3 |simmer         |                    |                                                       |
 |4 |combine        |                    |                                                       |
 |5 |add            |                    |                                                       |
-|6 |add            |                    |chicken bouillon cubes,pineapple chunks,chicken cup    |
+|6 |add            |                    |pineapple chunks,chicken bouillon cubes,chicken cup    |
 |7 |simmer         |                    |                                                       |
 |8 |serve          |hair                |                                                       |
 |9 |serves         |                    |                                                       |
