@@ -1,0 +1,66 @@
+#Ritrovamento di tutte le ricette con sale e cipolle
+
+SELECT *
+FROM recipes, contains, ingredients
+WHERE recipes.id in (SELECT recipes.id
+	  			 	 FROM recipes, contains, ingredients
+	   				 WHERE recipes.id = recipeid AND ingredients.id = ingredientid AND ingredients.name = 'salt')
+	  AND ingredients.name = 'onion' AND recipes.id = recipeid AND ingredients.id = ingredientid
+
+
+#Ritrovamento di tutte le ricette con non più di due carote
+
+SELECT *
+FROM recipes, contains, ingredients
+WHERE recipes.id = recipeid AND ingredients.id = ingredientid AND ingredients.name = 'carrots' AND quantita < 2
+
+#Ritrovamento di tutte le ricette dolci con almeno un ingrediente soffice
+
+SELECT *
+FROM recipes, contains, ingredients
+WHERE recipes.id in (SELECT recipes.id
+ 					 FROM recipes, contains, ingredients
+ 					 WHERE recipes.id = recipeid AND ingredients.id = ingredientid AND ingredients.name = 'sugar')
+	 AND recipes.id = recipeid AND ingredients.id = ingredientid AND proprieta in ('soft', 'softened')
+
+#Ritrovamento di tutte le ricette con non più di 3 step
+
+SELECT titolo, COUNT(steps.descrizione) as passaggi
+FROM recipes, composed, steps
+WHERE recipes.id = recipeid AND steps.id = stepid
+GROUP BY titolo
+HAVING COUNT(steps.descrizione) < 3
+
+#Ritrovamento di tutte le ricette con ingredienti burro e farina, e che utilizzino il forno
+
+SELECT *
+FROM recipes, composed, steps, utilize, instruments, contains, ingredients
+WHERE recipes.id in (SELECT recipes.id
+					 FROM recipes, contains, ingredients
+					 WHERE recipes.id = contains.recipeid AND ingredients.id = contains.ingredientid AND ingredients.name = 'flour')
+	AND recipes.id = composed.recipeid AND steps.id = composed.stepid AND steps.id = utilize.stepid 
+	AND instruments.id = utilize.instrumentid AND recipes.id = contains.recipeid 
+	AND ingredients.id = contains.ingredientid AND ingredients.name = 'butter' AND instruments.name = 'oven'
+
+#Ritrovamento di tutte le ricette con non più di 5 azioni
+
+SELECT titolo, COUNT(actions.name)
+FROM recipes, composed, steps, actions
+WHERE recipes.id = composed.recipeid AND steps.id = composed.stepid AND steps.actionid = actions.id
+GROUP BY titolo
+HAVING COUNT(actions.name) < 5
+
+#Estrazione del numero di volte che un'azione è applicata ad uno strumento
+
+SELECT actions.name as azione, instruments.name as strumento, COUNT(instruments.name) as conteggio
+FROM steps, actions, utilize, instruments
+WHERE  steps.actionid = actions.id AND utilize.stepid = steps.id AND utilize.instrumentid = instruments.id
+GROUP BY actions.name, instruments.name
+ORDER BY conteggio DESC
+
+#Ritrovamento di tutte le ricette con meno di 3 cucchianini di sale
+
+SELECT *
+FROM recipes, contains, ingredients
+WHERE contains.recipeid = recipes.id AND contains.ingredientid = ingredients.id 
+	AND misura = 'tablespoon' AND ingredients.name = 'salt' AND quantita < 3
