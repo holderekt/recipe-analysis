@@ -73,3 +73,11 @@ select onion_recipe.titolo, onion_recipe.id  from
 composed, steps, actions, involves, ingredients where
 (onion_recipe.id = composed.recipeid) and (composed.stepid = steps.id) and (steps.actionid = actions.id) and
 (involves.id = steps.id) and (ingredients.id = involves.ingredientid) and (ingredients.name = 'onion') and (not actions.name = 'fry')
+
+# Tutti gli ingredienti che non vengono mai bolliti e le relative ricette in cui vengono utilizzati
+
+select ingredients.name, recipes.titolo from steps, actions, involves, ingredients, recipes, composed where
+steps.actionid = actions.id and involves.stepid = steps.id and ingredients.id = involves.ingredientid and
+recipes.id = composed.recipeid and steps.id = composed.stepid and
+(not actions.name = 'boil') group by recipes.id, ingredients.id order by ingredients.name
+
