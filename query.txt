@@ -81,3 +81,13 @@ steps.actionid = actions.id and involves.stepid = steps.id and ingredients.id = 
 recipes.id = composed.recipeid and steps.id = composed.stepid and
 (not actions.name = 'boil') group by recipes.id, ingredients.id order by ingredients.name
 
+# Per tutti gli ingredienti viene mostrato lo strumento più utilizzato
+
+with ing_ins as (select ingredients.name as ing_name, instruments.name as ins_name, count(instruments.name) as time_used from instruments, utilize, steps, involves, ingredients where
+instruments.id = utilize.instrumentid and steps.id = utilize.stepid and steps.id = involves.stepid and ingredients.id = involves.ingredientid
+group by ingredients.name, instruments.name  order by ingredients.name)
+
+select ing_ins.ing_name, ins_name, time_used from ing_ins, 
+(select ing_name, max(time_used) as max_time_used from ing_ins
+group by ing_name) as maxtable
+where ing_ins.time_used = maxtable.max_time_used and ing_ins.ing_name = maxtable.ing_name
