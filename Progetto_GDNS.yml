@@ -14,4 +14,5 @@ dependencies:
   - ipython
   - ipykernel
   - jupyter
+  - inflect
 prefix: /home/navis/anaconda3/envs/Progetto_GDNS
