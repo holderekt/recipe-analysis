@@ -64,3 +64,12 @@ SELECT *
 FROM recipes, contains, ingredients
 WHERE contains.recipeid = recipes.id AND contains.ingredientid = ingredients.id 
 	AND misura = 'tablespoon' AND ingredients.name = 'salt' AND quantita < 3
+	
+# Ritrovamento di tutte le ricette che utilizzano le cipolle ma non le friggono
+	
+select onion_recipe.titolo, onion_recipe.id  from 
+(select recipes.id, recipes.titolo from recipes, contains, ingredients where 
+(recipes.id = contains.recipeid) and (contains.ingredientid = ingredients.id) and (ingredients.name = 'onion')) as onion_recipe,
+composed, steps, actions, involves, ingredients where
+(onion_recipe.id = composed.recipeid) and (composed.stepid = steps.id) and (steps.actionid = actions.id) and
+(involves.id = steps.id) and (ingredients.id = involves.ingredientid) and (ingredients.name = 'onion') and (not actions.name = 'fry')
