@@ -1,4 +1,4 @@
-#Ritrovamento di tutte le ricette con sale e cipolle
+# 1 Ritrovamento di tutte le ricette con sale e cipolle
 
 SELECT *
 FROM recipes, contains, ingredients
@@ -8,13 +8,13 @@ WHERE recipes.id in (SELECT recipes.id
 	  AND ingredients.name = 'onion' AND recipes.id = recipeid AND ingredients.id = ingredientid
 
 
-#Ritrovamento di tutte le ricette con non più di due carote
+# 2 Ritrovamento di tutte le ricette con non più di due carote
 
 SELECT *
 FROM recipes, contains, ingredients
 WHERE recipes.id = recipeid AND ingredients.id = ingredientid AND ingredients.name = 'carrots' AND quantita < 2
 
-#Ritrovamento di tutte le ricette dolci con almeno un ingrediente soffice
+# 3 Ritrovamento di tutte le ricette dolci con almeno un ingrediente soffice
 
 SELECT *
 FROM recipes, contains, ingredients
@@ -23,15 +23,7 @@ WHERE recipes.id in (SELECT recipes.id
  					 WHERE recipes.id = recipeid AND ingredients.id = ingredientid AND ingredients.name = 'sugar')
 	 AND recipes.id = recipeid AND ingredients.id = ingredientid AND proprieta in ('soft', 'softened')
 
-#Ritrovamento di tutte le ricette con non più di 3 step
-
-SELECT titolo, COUNT(steps.descrizione) as passaggi
-FROM recipes, composed, steps
-WHERE recipes.id = recipeid AND steps.id = stepid
-GROUP BY titolo
-HAVING COUNT(steps.descrizione) < 3
-
-#Ritrovamento di tutte le ricette con ingredienti burro e farina, e che utilizzino il forno
+# 4 Ritrovamento di tutte le ricette con ingredienti burro e farina, e che utilizzino il forno
 
 SELECT *
 FROM recipes, composed, steps, utilize, instruments, contains, ingredients
@@ -42,15 +34,15 @@ WHERE recipes.id in (SELECT recipes.id
 	AND instruments.id = utilize.instrumentid AND recipes.id = contains.recipeid 
 	AND ingredients.id = contains.ingredientid AND ingredients.name = 'butter' AND instruments.name = 'oven'
 
-#Ritrovamento di tutte le ricette con non più di 5 azioni
+# 5 Ritrovamento di tutte le ricette con non più di 3 azioni
 
 SELECT titolo, COUNT(actions.name)
 FROM recipes, composed, steps, actions
 WHERE recipes.id = composed.recipeid AND steps.id = composed.stepid AND steps.actionid = actions.id
 GROUP BY titolo
-HAVING COUNT(actions.name) < 5
+HAVING COUNT(actions.name) < 3
 
-#Estrazione del numero di volte che un'azione è applicata ad uno strumento
+# 6 Estrazione del numero di volte che un'azione è applicata ad uno strumento
 
 SELECT actions.name as azione, instruments.name as strumento, COUNT(instruments.name) as conteggio
 FROM steps, actions, utilize, instruments
@@ -58,14 +50,14 @@ WHERE  steps.actionid = actions.id AND utilize.stepid = steps.id AND utilize.ins
 GROUP BY actions.name, instruments.name
 ORDER BY conteggio DESC
 
-#Ritrovamento di tutte le ricette con meno di 3 cucchianini di sale
+# 7 Ritrovamento di tutte le ricette con meno di 3 cucchianini di sale
 
 SELECT *
 FROM recipes, contains, ingredients
 WHERE contains.recipeid = recipes.id AND contains.ingredientid = ingredients.id 
 	AND misura = 'tablespoon' AND ingredients.name = 'salt' AND quantita < 3
 	
-# Ritrovamento di tutte le ricette che utilizzano le cipolle ma non le friggono
+# 8 Ritrovamento di tutte le ricette che utilizzano le cipolle ma non le friggono
 	
 select onion_recipe.titolo, onion_recipe.id  from 
 (select recipes.id, recipes.titolo from recipes, contains, ingredients where 
@@ -74,14 +66,14 @@ composed, steps, actions, involves, ingredients where
 (onion_recipe.id = composed.recipeid) and (composed.stepid = steps.id) and (steps.actionid = actions.id) and
 (involves.id = steps.id) and (ingredients.id = involves.ingredientid) and (ingredients.name = 'onion') and (not actions.name = 'fry')
 
-# Tutti gli ingredienti che non vengono mai bolliti e le relative ricette in cui vengono utilizzati
+# 9 Tutti gli ingredienti che non vengono mai bolliti e le relative ricette in cui vengono utilizzati
 
 select ingredients.name, recipes.titolo from steps, actions, involves, ingredients, recipes, composed where
 steps.actionid = actions.id and involves.stepid = steps.id and ingredients.id = involves.ingredientid and
 recipes.id = composed.recipeid and steps.id = composed.stepid and
 (not actions.name = 'boil') group by recipes.id, ingredients.id order by ingredients.name
 
-# Per tutti gli ingredienti viene mostrato lo strumento più utilizzato
+# 10 Per tutti gli ingredienti viene mostrato lo strumento più utilizzato
 
 with ing_ins as (select ingredients.name as ing_name, instruments.name as ins_name, count(instruments.name) as time_used from instruments, utilize, steps, involves, ingredients where
 instruments.id = utilize.instrumentid and steps.id = utilize.stepid and steps.id = involves.stepid and ingredients.id = involves.ingredientid
@@ -91,3 +83,15 @@ select ing_ins.ing_name, ins_name, time_used from ing_ins,
 (select ing_name, max(time_used) as max_time_used from ing_ins
 group by ing_name) as maxtable
 where ing_ins.time_used = maxtable.max_time_used and ing_ins.ing_name = maxtable.ing_name
+
+# 11 Ricette che richiedono solo 1 strumento
+ 
+ select recipes.titolo from recipes, composed, steps, utilize, instruments where
+recipes.id = composed.recipeid and composed.stepid = steps.id and utilize.stepid = steps.id and utilize.instrumentid = instruments.id 
+group by recipes.titolo having count(instruments.name) = 1
+
+# 11 (Opzionale) Il singolo strumento utilizzato è una padella 
+
+ select recipes.titolo from recipes, composed, steps, utilize, instruments where
+recipes.id = composed.recipeid and composed.stepid = steps.id and utilize.stepid = steps.id and utilize.instrumentid = instruments.id and (instruments.name in ('saucepan', 'skillet')
+group by recipes.titolo having count(instruments.name) = 1
