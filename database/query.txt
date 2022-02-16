@@ -1,5 +1,7 @@
 # 1 Ritrovamento di tutte le ricette con sale e cipolle
 
+CASE: L'utente è interessato ad una ricetta salata a base di cipolle.
+
 SELECT recipes.title
 FROM recipes, contains, ingredients
 WHERE recipes.id in (SELECT recipes.id
@@ -9,11 +11,15 @@ WHERE recipes.id in (SELECT recipes.id
 
 # 2 Ritrovamento di tutte le ricette con non più di due carote
 
+CASE: L'utente ha a sua disposizione in casa solo due carote e necessita di consumarle poichè sotto scadenza
+
 SELECT recipes.title, recipes.steps_nstr
 FROM recipes, contains, ingredients
 WHERE recipes.id = recipeid AND ingredients.id = ingredientid AND ingredients.name = 'carrot' AND quantity < 2
 
 # 3 Ritrovamento di tutte le ricette dolci con almeno un ingrediente soffice
+
+CASE: L'utente ha necessità di mangiare un cibo soffice (per questo o per necessità) che sia anche dolce
 
 SELECT recipes.title, ingredients.name
 FROM recipes, contains, ingredients
@@ -23,6 +29,8 @@ WHERE recipes.id in (SELECT recipes.id
 	 AND recipes.id = recipeid AND ingredients.id = ingredientid AND adjectives in ('soft', 'softened')
 
 # 4 Ritrovamento di tutte le ricette con ingredienti burro e farina, e che utilizzino il forno
+
+CASE: L'utente vuole preparare un buon dolce al forno, senza particolare restrizione sull'essere una torta (biscotti, torte, crostate, etc...) 
 
 SELECT recipes.title
 FROM recipes, composed, steps, utilize, instruments, contains, ingredients
@@ -35,6 +43,8 @@ WHERE recipes.id in (SELECT recipes.id
 	
 	
 # 5 Ritrovamento di tutte le ricette con non più di 3 azioni
+
+CASE: L'utente non ha molto tempo a sua disposizione e vuole preparare un piatto che richieda poche azioni
 
 SELECT title, COUNT(actions.name)
 FROM recipes, composed, steps, actions
@@ -52,12 +62,16 @@ ORDER BY COUNT(instruments.name) DESC
 
 # 7 Ritrovamento di tutte le ricette con meno di 3 cucchianini di sale
 
+CASE: L'utente ha necessità di non mangiare troppo sale nella sua dieta quindi ricerca tutte le ricette con non più di 3 cucchianini di sale
+
 SELECT recipes.title, quantity
 FROM recipes, contains, ingredients
 WHERE contains.recipeid = recipes.id AND contains.ingredientid = ingredients.id 
 	AND size = 'tablespoon' AND ingredients.name = 'salt' AND quantity < 3
 	
 # 8 Ritrovamento di tutte le ricette che utilizzano le cipolle ma non le friggono
+
+CASE: L'utente ha voglia di cipolle ma non può mangiare frittura per questioni di dieta 
 	
 SELECT onion_recipe.title, actions.name
 FROM (SELECT recipes.id, recipes.title 
@@ -67,7 +81,7 @@ FROM (SELECT recipes.id, recipes.title
 WHERE onion_recipe.id = composed.recipeid AND composed.stepid = steps.id AND steps.actionid = actions.id 
 	AND involves.id = steps.id AND ingredients.id = involves.ingredientid AND ingredients.name = 'onion' AND NOT actions.name = 'fry'
 
-# 9 Tutti gli ingredienti che non vengono mai bolliti e le relative ricette in cui vengono utilizzati
+# 9 Tutti gli ingredienti che non vengono mai bolliti e le relative ricette in cui vengono utilizzati 
 
 SELECT ingredients.name, recipes.title
 FROM steps, actions, involves, ingredients, recipes, composed 
@@ -91,6 +105,8 @@ FROM ing_ins, (SELECT ing_name, max(time_used) AS max_time_used
 WHERE ing_ins.time_used = maxtable.max_time_used AND ing_ins.ing_name = maxtable.ing_name
 
 # 11 Ricette che richiedono solo 1 strumento
+
+CASE: L'utente non ha intenzione di sporcare molti strumenti per cucinare e quindi ricerca tutte le ricette con solo uno strumento utilizzato 
  
 SELECT recipes.title 
 FROM recipes, composed, steps, utilize, instruments 
@@ -99,6 +115,8 @@ GROUP BY recipes.title
 HAVING count(instruments.name) = 1
 
 # 11 (Opzionale) Il singolo strumento utilizzato è una padella 
+
+CASE: L'utente non ha molta voglia di sporcare utensili e vuole un buon piatto preparato in padella 
 
 SELECT recipes.title 
 FROM recipes, composed, steps, utilize, instruments 
