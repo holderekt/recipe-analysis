@@ -19,7 +19,7 @@ WHERE recipes.id = recipeid AND ingredients.id = ingredientid AND ingredients.na
 
 # 3 Ritrovamento di tutte le ricette dolci con almeno un ingrediente soffice
 
-CASE: L'utente ha necessità di mangiare un cibo soffice (per questo o per necessità) che sia anche dolce
+CASE: L'utente ha necessità di mangiare un cibo soffice (per gusto o per necessità) che sia anche dolce
 
 SELECT recipes.title, ingredients.name
 FROM recipes, contains, ingredients
